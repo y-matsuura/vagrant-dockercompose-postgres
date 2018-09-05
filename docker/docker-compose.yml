@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  # postgresql
+  postgresql:
+    image: postgres:10
+    container_name: sample
+    ports:
+      - "5432:5432"
+    environment:
+    # デフォルトのpostgres ユーザーでログインしてsample ユーザーをつくるのでここでは指定しない
+      # - "POSTGRES_USER=sample"
+      - "POSTGRES_PASSWORD=sample"
+    restart: always
+    # user: root
+    container_name: postgres-db
+    volumes:
+      - /vagrant/data/postgresql:/var/lib/postgresql/data
