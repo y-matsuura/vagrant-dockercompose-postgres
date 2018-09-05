@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   # VM名
   #config.vm.define :www do |c|
-  #  define_machine_name c, "vagrant_"
+  #  define_machine_name c, "vagrant_sample"
   #end
   
   # Ubuntu 14.04LTS
